@@ -5,7 +5,6 @@ const cors = require("cors");
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 const nodemailer = require("nodemailer");
-const { OAuth2Client } = require("google-auth-library");
 require("dotenv").config();
 
 const app = express();
@@ -15,80 +14,17 @@ app.use(cors());
 app.use(express.json());
 
 // ✅ Email Setup (Nodemailer)
-const transporter = nodemailer.createTransport({
-  service: "gmail",
-  auth: {
-    user: process.env.EMAIL_USER,       // Set in .env
-    pass: process.env.EMAIL_PASSWORD,   // Set in .env
-  },
-});
+
 
 // ✅ Serve Static Uploads (for images)
 const uploadsPath = path.join(__dirname, "uploads");
 app.use("/uploads", express.static(uploadsPath));
 
 // ✅ Send Verification Email
-app.post("/api/send-verification", async (req, res) => {
-  const { email } = req.body;
-  if (!email) return res.status(400).json({ error: "Email is required" });
 
-  const verificationCode = Math.floor(100000 + Math.random() * 900000);
-
-  const mailOptions = {
-    from: process.env.EMAIL_USER,
-    to: email,
-    subject: "✨ Your Key to Elite Estates",
-    html: `
-      <div style="font-family: 'Poppins', sans-serif;">
-        <h2>Your Verification Code</h2>
-        <p>Use this code to verify your account:</p>
-        <h1>${verificationCode}</h1>
-        <p>It will expire in 10 minutes.</p>
-      </div>
-    `,
-  };
-
-  try {
-    transporter.sendMail(mailOptions, (error) => {
-      if (error) {
-        console.error("Email error:", error);
-        return res.status(500).json({ error: "Failed to send email" });
-      }
-      res.status(200).json({ message: "Verification email sent!", code: verificationCode });
-    });
-  } catch (err) {
-    res.status(500).json({ error: "Email sending failed" });
-  }
-});
 
 // ✅ Google Signup/Login
-const client = new OAuth2Client(process.env.GOOGLE_CLIENT_ID);
 
-app.post("/api/google-signup", async (req, res) => {
-  const { token } = req.body;
-
-  try {
-    const ticket = await client.verifyIdToken({
-      idToken: token,
-      audience: process.env.GOOGLE_CLIENT_ID,
-    });
-
-    const payload = ticket.getPayload();
-    const { email, name } = payload;
-
-    // In real DB, you'd store user
-    const user = {
-      email,
-      name,
-      password: "GOOGLE_AUTH"
-    };
-
-    res.status(200).json({ message: "Login successful", user });
-  } catch (error) {
-    console.error("Google Auth Error:", error);
-    res.status(500).json({ error: "Google signup failed" });
-  }
-});
 
 // ✅ Local JSON Property Fetch
 app.get("/properties", (req, res) => {
@@ -139,5 +75,6 @@ app.post("/api/login", async (req, res) => {
 
 // ✅ Start Server
 app.listen(PORT, () =>
-  console.log(`🚀 Server running at http://localhost:${PORT}`)
+  console.log(`🚀 Server running on port ${PORT}`)
 );
+

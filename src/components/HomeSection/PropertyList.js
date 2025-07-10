@@ -12,7 +12,7 @@ const PropertyList = () => {
   const [selectedLocation, setSelectedLocation] = useState("");
 
   useEffect(() => {
-    fetch("http://localhost:5000/properties")
+    fetch("http://https://realestate-3rel.onrender.com/properties")
       .then((response) => response.json())
       .then((data) => setProperties(data))
       .catch((error) => console.error("Error fetching properties:", error));
