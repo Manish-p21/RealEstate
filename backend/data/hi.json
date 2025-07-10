@@ -1,0 +1,339 @@
+[{
+  "_id": {
+    "$oid": "67dd2561be3b5fb277c48690"
+  },
+  "title": "Luxury 3BHK Apartment in Airoli",
+  "location": "Airoli, Mumbai",
+  "sqft": 1200,
+  "beds": 3,
+  "baths": 2,
+  "price": 7400000,
+  "price_per_sqft": 20000,
+  "rating": 4.5,
+  "reviews": 120,
+  "featured": "Featured",
+  "image_url": "http://localhost:5000/uploads/3.jpg",
+  " Infinity Pool": "1",
+  " Rooftop Lounge": "1",
+  " Sky Garden": "1",
+  " Surround Sound": "1",
+  " Valet Parking": "1",
+  "4K Surveillance": "0",
+  "Concierge Security": "1",
+  "Home Automation": "0",
+  "Panoramic Views": "1",
+  "Private Gym": "1",
+  "Status": "Available",
+  "catagore": "house",
+  "descrition": "Perched atop one of Manhattan’s most iconic towers, this 4-bedroom penthouse redefines luxury living. Floor-to-ceiling windows frame jaw-dropping 360-degree views of the NYC skyline, while the open-concept design flows seamlessly into a chef’s kitchen with top-tier appliances. Unwind in the spa-inspired master suite or entertain on your private rooftop terrace. This is more than a home—it’s a lifestyle.",
+  "image_url1": "http://localhost:5000/uploads/3.jpg",
+  "image_url2": "http://localhost:5000/uploads/3.jpg",
+  "image_url3": "http://localhost:5000/uploads/3.jpg",
+  "image_url4": "http://localhost:5000/uploads/3.jpg",
+  "image_url5": "http://localhost:5000/uploads/3.jpg",
+  "image_url6": "http://localhost:5000/uploads/3.jpg"
+},
+{
+  "_id": {
+    "$oid": "67dd2561be3b5fb277c48691"
+  },
+  "title": "Modern 2BHK Apartment in Powai",
+  "location": "Powai, Mumbai",
+  "sqft": 850,
+  "beds": 2,
+  "baths": 2,
+  "price": 5200000,
+  "price_per_sqft": 18000,
+  "rating": 4.2,
+  "reviews": 80,
+  "featured": "New Listing",
+  "image_url": "http://localhost:5000/uploads/pexels-fauxels-3184416.jpg"
+},
+{
+  "_id": {
+    "$oid": "67dd2561be3b5fb277c48692"
+  },
+  "title": "Spacious 4BHK Villa in Juhu",
+  "location": "Juhu, Mumbai",
+  "sqft": 2000,
+  "beds": 4,
+  "baths": 4,
+  "price": 15000000,
+  "price_per_sqft": 15000,
+  "rating": 4.8,
+  "reviews": 150,
+  "featured": "Featured",
+  "image_url": "http://localhost:5000/uploads/pexels-fauxels-3184416.jpg"
+},
+{
+  "_id": {
+    "$oid": "67dd2561be3b5fb277c48693"
+  },
+  "title": "Affordable 1BHK in Andheri",
+  "location": "Andheri, Mumbai",
+  "sqft": 600,
+  "beds": 1,
+  "baths": 1,
+  "price": 2500000,
+  "price_per_sqft": 16000,
+  "rating": 4.1,
+  "reviews": 60,
+  "featured": "New Listing",
+  "image_url": "http://localhost:5000/uploads/pexels-cottonbro-5741299.jpg"
+},
+{
+  "_id": {
+    "$oid": "67dd2561be3b5fb277c48694"
+  },
+  "title": "Elegant 3BHK in Bandra",
+  "location": "Bandra, Mumbai",
+  "sqft": 1400,
+  "beds": 3,
+  "baths": 2,
+  "price": 11000000,
+  "price_per_sqft": 19000,
+  "rating": 4.6,
+  "reviews": 100,
+  "featured": "Featured",
+  "image_url": "http://localhost:5000/uploads/pexels-fauxels-3184416.jpg"
+},
+{
+  "_id": {
+    "$oid": "67dd2561be3b5fb277c48695"
+  },
+  "title": "Premium Penthouse in Worli",
+  "location": "Worli, Mumbai",
+  "sqft": 2500,
+  "beds": 4,
+  "baths": 3,
+  "price": 30000000,
+  "price_per_sqft": 12000,
+  "rating": 4.9,
+  "reviews": 200,
+  "featured": "New Listing",
+  "image_url": "http://localhost:5000/uploads/pexels-fauxels-3184416.jpg"
+},
+{
+  "_id": {
+    "$oid": "67dd2561be3b5fb277c48696"
+  },
+  "title": "Cozy Studio Apartment in Malad",
+  "location": "Malad, Mumbai",
+  "sqft": 450,
+  "beds": 1,
+  "baths": 1,
+  "price": 1800000,
+  "price_per_sqft": 4000,
+  "rating": 3.9,
+  "reviews": 50,
+  "featured": "Featured",
+  "image_url": "http://localhost:5000/uploads/pexels-fauxels-3184416.jpg"
+},
+{
+  "_id": {
+    "$oid": "67dd2561be3b5fb277c48697"
+  },
+  "title": "Smart 2BHK in Vikhroli",
+  "location": "Vikhroli, Mumbai",
+  "sqft": 900,
+  "beds": 2,
+  "baths": 2,
+  "price": 4500000,
+  "price_per_sqft": 5000,
+  "rating": 4,
+  "reviews": 75,
+  "featured": "New Listing",
+  "image_url": "http://localhost:5000/uploads/pexels-fauxels-3184416.jpg"
+},
+{
+  "_id": {
+    "$oid": "67dd2561be3b5fb277c48698"
+  },
+  "title": "Luxury 3BHK in Lower Parel",
+  "location": "Lower Parel, Mumbai",
+  "sqft": 1600,
+  "beds": 3,
+  "baths": 3,
+  "price": 12000000,
+  "price_per_sqft": 7500,
+  "rating": 4.7,
+  "reviews": 140,
+  "featured": "Featured",
+  "image_url": "http://localhost:5000/uploads/pexels-fauxels-3184416.jpg"
+},
+{
+  "_id": {
+    "$oid": "67dd2561be3b5fb277c48699"
+  },
+  "title": "High-End 4BHK in South Mumbai",
+  "location": "South Mumbai",
+  "sqft": 2200,
+  "beds": 4,
+  "baths": 4,
+  "price": 25000000,
+  "price_per_sqft": 11000,
+  "rating": 4.8,
+  "reviews": 180,
+  "featured": "New Listing",
+  "image_url": "http://localhost:5000/uploads/pexels-fauxels-3184416.jpg"
+},
+{
+  "_id": {
+    "$oid": "67dd2561be3b5fb277c4869a"
+  },
+  "title": "Beachfront Villa in Juhu",
+  "location": "Juhu, Mumbai",
+  "sqft": 2800,
+  "beds": 5,
+  "baths": 5,
+  "price": 40000000,
+  "price_per_sqft": 14000,
+  "rating": 4.9,
+  "reviews": 250,
+  "featured": "Featured",
+  "image_url": "http://localhost:5000/uploads/pexels-fauxels-3184416.jpg"
+},
+{
+  "_id": {
+    "$oid": "67dd2561be3b5fb277c4869b"
+  },
+  "title": "Compact 1BHK in Dadar",
+  "location": "Dadar, Mumbai",
+  "sqft": 550,
+  "beds": 1,
+  "baths": 1,
+  "price": 2200000,
+  "price_per_sqft": 4000,
+  "rating": 3.8,
+  "reviews": 45,
+  "featured": "New Listing",
+  "image_url": "http://localhost:5000/uploads/pexels-fauxels-3184416.jpg"
+},
+{
+  "_id": {
+    "$oid": "67dd2561be3b5fb277c4869c"
+  },
+  "title": "Spacious 3BHK in Goregaon",
+  "location": "Goregaon, Mumbai",
+  "sqft": 1350,
+  "beds": 3,
+  "baths": 2,
+  "price": 9000000,
+  "price_per_sqft": 6700,
+  "rating": 4.3,
+  "reviews": 110,
+  "featured": "Featured",
+  "image_url": "http://localhost:5000/uploads/pexels-fauxels-3184416.jpg"
+},
+{
+  "_id": {
+    "$oid": "67dd2561be3b5fb277c4869d"
+  },
+  "title": "Luxury Apartment in Santacruz",
+  "location": "Santacruz, Mumbai",
+  "sqft": 1800,
+  "beds": 3,
+  "baths": 3,
+  "price": 13500000,
+  "price_per_sqft": 7500,
+  "rating": 4.5,
+  "reviews": 130,
+  "featured": "New Listing",
+  "image_url": "http://localhost:5000/uploads/pexels-fauxels-3184416.jpg"
+},
+{
+  "_id": {
+    "$oid": "67dd2561be3b5fb277c4869e"
+  },
+  "title": "Affordable 2BHK in Kandivali",
+  "location": "Kandivali, Mumbai",
+  "sqft": 900,
+  "beds": 2,
+  "baths": 2,
+  "price": 5000000,
+  "price_per_sqft": 5500,
+  "rating": 4,
+  "reviews": 90,
+  "featured": "Featured",
+  "image_url": "http://localhost:5000/uploads/pexels-fauxels-3184416.jpg"
+},
+{
+  "_id": {
+    "$oid": "67dd2561be3b5fb277c4869f"
+  },
+  "title": "Opulent 5BHK in Altamount Road",
+  "location": "Altamount Road, Mumbai",
+  "sqft": 3000,
+  "beds": 5,
+  "baths": 5,
+  "price": 50000000,
+  "price_per_sqft": 16666,
+  "rating": 5,
+  "reviews": 300,
+  "featured": "New Listing",
+  "image_url": "http://localhost:5000/uploads/pexels-fauxels-3184416.jpg"
+},
+{
+  "_id": {
+    "$oid": "67dd2561be3b5fb277c486a0"
+  },
+  "title": "Budget-Friendly 1BHK in Thane",
+  "location": "Thane, Mumbai",
+  "sqft": 650,
+  "beds": 1,
+  "baths": 1,
+  "price": 2000000,
+  "price_per_sqft": 3076,
+  "rating": 3.7,
+  "reviews": 55,
+  "featured": "Featured",
+  "image_url": "http://localhost:5000/uploads/pexels-fauxels-3184416.jpg"
+},
+{
+  "_id": {
+    "$oid": "67dd2561be3b5fb277c486a1"
+  },
+  "title": "Modern 3BHK in Navi Mumbai",
+  "location": "Navi Mumbai",
+  "sqft": 1500,
+  "beds": 3,
+  "baths": 3,
+  "price": 8000000,
+  "price_per_sqft": 5333,
+  "rating": 4.2,
+  "reviews": 95,
+  "featured": "New Listing",
+  "image_url": "http://localhost:5000/uploads/pexels-fauxels-3184416.jpg"
+},
+{
+  "_id": {
+    "$oid": "67dd2561be3b5fb277c486a2"
+  },
+  "title": "Designer Loft in Bandra",
+  "location": "Bandra, Mumbai",
+  "sqft": 1000,
+  "beds": 2,
+  "baths": 1,
+  "price": 6000000,
+  "price_per_sqft": 6000,
+  "rating": 4.1,
+  "reviews": 70,
+  "featured": "Featured",
+  "image_url": "http://localhost:5000/uploads/pexels-fauxels-3184416.jpg"
+},
+{
+  "_id": {
+    "$oid": "67dd2561be3b5fb277c486a3"
+  },
+  "title": "Smart Home 2BHK in Chembur",
+  "location": "Chembur, Mumbai",
+  "sqft": 950,
+  "beds": 2,
+  "baths": 2,
+  "price": 5800000,
+  "price_per_sqft": 6100,
+  "rating": 4.3,
+  "reviews": 85,
+  "featured": "New Listing",
+  "image_url": "http://localhost:5000/uploads/pexels-fauxels-3184416.jpg"
+}]

@@ -1,0 +1,8 @@
+# React
+node_modules/
+build/
+.env
+
+# Backend
+/backend/node_modules
+/backend/.env

@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+/* Improved smooth zoom effect */
+.slick-slide img {
+    transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94), 
+                filter 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    will-change: transform, filter; /* Optimizes performance */
+}
+
+/* Hide scrollbar */
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+/* Smoother hover effect */
+.slick-slide img:hover {
+    transform: scale(1.08);
+    filter: brightness(1.15);
+}
+
+/* Custom arrow animations */
+.slick-prev, .slick-next {
+    color: white !important;
+    font-size: 35px !important;
+    z-index: 10;
+    transition: transform 0.2s ease-out;
+}
+
+.slick-prev:hover, .slick-next:hover {
+    transform: scale(1.25);
+}
+
+/* Improved dot animations */
+.slick-dots li button:before {
+    color: white !important;
+    font-size: 14px;
+    opacity: 0.8;
+    transition: opacity 0.2s ease-out, transform 0.2s ease-out;
+}
+
+.slick-dots li.slick-active button:before {
+    color: #38bdf8 !important;
+    font-size: 18px;
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+@keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  
+  .animate-scroll {
+    animation: scroll 20s linear infinite; /* Adjust the duration (20s) for speed */
+  }
+  
+  .animate-scroll:hover {
+    animation-play-state: paused; /* Pause animation on hover */
+  }
