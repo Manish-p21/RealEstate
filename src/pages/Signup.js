@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
-import { GoogleLogin, GoogleOAuthProvider } from "@react-oauth/google"; // Import GoogleOAuthProvider
 import { jwtDecode } from "jwt-decode";
 
 export default function Signup() {
