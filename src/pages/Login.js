@@ -43,7 +43,7 @@ const Login = () => {
     setLoading(true);
     setMessage({ text: "", type: "" });
     try {
-      const response = await fetch("http://localhost:5000/api/login", {
+      const response = await fetch("https://realestate-3rel.onrender.com/api/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, password }),
@@ -72,7 +72,7 @@ const Login = () => {
     }
     setLoading(true);
     try {
-      const response = await fetch("http://localhost:5000/api/send-verification", {
+      const response = await fetch("https://realestate-3rel.onrender.com/api/send-verification", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email }),
@@ -102,7 +102,7 @@ const Login = () => {
     }
     setLoading(true);
     try {
-      const response = await fetch("http://localhost:5000/api/reset-password", {
+      const response = await fetch("https://realestate-3rel.onrender.com/api/reset-password", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, newPassword, verificationCode: code.join("") }),
@@ -126,7 +126,7 @@ const Login = () => {
     console.log("Google response:", response);
     if (response.credential) {
       try {
-        const res = await fetch("http://localhost:5000/api/google-signup", {
+        const res = await fetch("https://realestate-3rel.onrender.com/api/google-signup", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ token: response.credential }),

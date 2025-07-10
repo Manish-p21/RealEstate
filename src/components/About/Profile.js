@@ -42,7 +42,7 @@ const Profile = () => {
     // Fetch user profile
     const fetchUserProfile = async () => {
       try {
-        const response = await fetch("http://localhost:5000/user/profile");
+        const response = await fetch("https://realestate-3rel.onrender.com/user/profile");
         if (!response.ok) throw new Error("Failed to fetch user profile");
         const data = await response.json();
         setUser(data);
@@ -55,7 +55,7 @@ const Profile = () => {
     // Fetch saved properties
     const fetchSavedProperties = async () => {
       try {
-        const response = await fetch("http://localhost:5000/user/saved-properties");
+        const response = await fetch("https://realestate-3rel.onrender.com/user/saved-properties");
         if (!response.ok) throw new Error("Failed to fetch saved properties");
         const data = await response.json();
         setSavedProperties(data);
@@ -67,7 +67,7 @@ const Profile = () => {
     // Fetch recently viewed properties
     const fetchRecentlyViewed = async () => {
       try {
-        const response = await fetch("http://localhost:5000/user/recently-viewed");
+        const response = await fetch("https://realestate-3rel.onrender.com/user/recently-viewed");
         if (!response.ok) throw new Error("Failed to fetch recently viewed properties");
         const data = await response.json();
         setRecentlyViewed(data);
@@ -96,7 +96,7 @@ const Profile = () => {
   // Save profile changes
   const handleSaveProfile = async () => {
     try {
-      const response = await fetch("http://localhost:5000/user/profile", {
+      const response = await fetch("https://realestate-3rel.onrender.com/user/profile", {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
@@ -132,7 +132,7 @@ const Profile = () => {
   const handleDeleteAccount = async () => {
     if (window.confirm("Are you sure you want to delete your account? This action cannot be undone.")) {
       try {
-        const response = await fetch("http://localhost:5000/user/profile", {
+        const response = await fetch("https://realestate-3rel.onrender.com/user/profile", {
           method: "DELETE",
         });
         if (!response.ok) throw new Error("Failed to delete account");

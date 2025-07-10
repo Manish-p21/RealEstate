@@ -22,7 +22,7 @@ export default function Signup() {
     }
 
     try {
-      const response = await fetch("http://localhost:5000/api/send-verification", {
+      const response = await fetch("https://realestate-3rel.onrender.com/api/send-verification", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email }),
@@ -49,7 +49,7 @@ export default function Signup() {
     }
 
     try {
-      const response = await fetch("http://localhost:5000/api/verify-code", {
+      const response = await fetch("https://realestate-3rel.onrender.com/api/verify-code", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, code: fullCode }),
@@ -75,7 +75,7 @@ export default function Signup() {
     }
 
     try {
-      const response = await fetch("http://localhost:5000/api/signup", {
+      const response = await fetch("https://realestate-3rel.onrender.com/api/signup", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ name, email, password }),
@@ -99,7 +99,7 @@ export default function Signup() {
     const { name, email } = decoded;
 
     try {
-      const response = await fetch("http://localhost:5000/api/google-signup", {
+      const response = await fetch("https://realestate-3rel.onrender.com/api/google-signup", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ token: credentialResponse.credential }),

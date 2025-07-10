@@ -12,7 +12,7 @@
   "rating": 4.5,
   "reviews": 120,
   "featured": "Featured",
-  "image_url": "http://localhost:5000/uploads/3.jpg",
+  "image_url": "https://realestate-3rel.onrender.com/uploads/3.jpg",
   " Infinity Pool": "1",
   " Rooftop Lounge": "1",
   " Sky Garden": "1",
@@ -26,12 +26,12 @@
   "Status": "Available",
   "catagore": "house",
   "descrition": "Perched atop one of Manhattan’s most iconic towers, this 4-bedroom penthouse redefines luxury living. Floor-to-ceiling windows frame jaw-dropping 360-degree views of the NYC skyline, while the open-concept design flows seamlessly into a chef’s kitchen with top-tier appliances. Unwind in the spa-inspired master suite or entertain on your private rooftop terrace. This is more than a home—it’s a lifestyle.",
-  "image_url1": "http://localhost:5000/uploads/3.jpg",
-  "image_url2": "http://localhost:5000/uploads/3.jpg",
-  "image_url3": "http://localhost:5000/uploads/3.jpg",
-  "image_url4": "http://localhost:5000/uploads/3.jpg",
-  "image_url5": "http://localhost:5000/uploads/3.jpg",
-  "image_url6": "http://localhost:5000/uploads/3.jpg"
+  "image_url1": "https://realestate-3rel.onrender.com/uploads/3.jpg",
+  "image_url2": "https://realestate-3rel.onrender.com/uploads/3.jpg",
+  "image_url3": "https://realestate-3rel.onrender.com/uploads/3.jpg",
+  "image_url4": "https://realestate-3rel.onrender.com/uploads/3.jpg",
+  "image_url5": "https://realestate-3rel.onrender.com/uploads/3.jpg",
+  "image_url6": "https://realestate-3rel.onrender.com/uploads/3.jpg"
 },
 {
   "_id": {
@@ -47,7 +47,7 @@
   "rating": 4.2,
   "reviews": 80,
   "featured": "New Listing",
-  "image_url": "http://localhost:5000/uploads/pexels-fauxels-3184416.jpg"
+  "image_url": "https://realestate-3rel.onrender.com/uploads/pexels-fauxels-3184416.jpg"
 },
 {
   "_id": {
@@ -63,7 +63,7 @@
   "rating": 4.8,
   "reviews": 150,
   "featured": "Featured",
-  "image_url": "http://localhost:5000/uploads/pexels-fauxels-3184416.jpg"
+  "image_url": "https://realestate-3rel.onrender.com/uploads/pexels-fauxels-3184416.jpg"
 },
 {
   "_id": {
@@ -79,7 +79,7 @@
   "rating": 4.1,
   "reviews": 60,
   "featured": "New Listing",
-  "image_url": "http://localhost:5000/uploads/pexels-cottonbro-5741299.jpg"
+  "image_url": "https://realestate-3rel.onrender.com/uploads/pexels-cottonbro-5741299.jpg"
 },
 {
   "_id": {
@@ -95,7 +95,7 @@
   "rating": 4.6,
   "reviews": 100,
   "featured": "Featured",
-  "image_url": "http://localhost:5000/uploads/pexels-fauxels-3184416.jpg"
+  "image_url": "https://realestate-3rel.onrender.com/uploads/pexels-fauxels-3184416.jpg"
 },
 {
   "_id": {
@@ -111,7 +111,7 @@
   "rating": 4.9,
   "reviews": 200,
   "featured": "New Listing",
-  "image_url": "http://localhost:5000/uploads/pexels-fauxels-3184416.jpg"
+  "image_url": "https://realestate-3rel.onrender.com/uploads/pexels-fauxels-3184416.jpg"
 },
 {
   "_id": {
@@ -127,7 +127,7 @@
   "rating": 3.9,
   "reviews": 50,
   "featured": "Featured",
-  "image_url": "http://localhost:5000/uploads/pexels-fauxels-3184416.jpg"
+  "image_url": "https://realestate-3rel.onrender.com/uploads/pexels-fauxels-3184416.jpg"
 },
 {
   "_id": {
@@ -143,7 +143,7 @@
   "rating": 4,
   "reviews": 75,
   "featured": "New Listing",
-  "image_url": "http://localhost:5000/uploads/pexels-fauxels-3184416.jpg"
+  "image_url": "https://realestate-3rel.onrender.com/uploads/pexels-fauxels-3184416.jpg"
 },
 {
   "_id": {
@@ -159,7 +159,7 @@
   "rating": 4.7,
   "reviews": 140,
   "featured": "Featured",
-  "image_url": "http://localhost:5000/uploads/pexels-fauxels-3184416.jpg"
+  "image_url": "https://realestate-3rel.onrender.com/uploads/pexels-fauxels-3184416.jpg"
 },
 {
   "_id": {
@@ -175,7 +175,7 @@
   "rating": 4.8,
   "reviews": 180,
   "featured": "New Listing",
-  "image_url": "http://localhost:5000/uploads/pexels-fauxels-3184416.jpg"
+  "image_url": "https://realestate-3rel.onrender.com/uploads/pexels-fauxels-3184416.jpg"
 },
 {
   "_id": {
@@ -191,7 +191,7 @@
   "rating": 4.9,
   "reviews": 250,
   "featured": "Featured",
-  "image_url": "http://localhost:5000/uploads/pexels-fauxels-3184416.jpg"
+  "image_url": "https://realestate-3rel.onrender.com/uploads/pexels-fauxels-3184416.jpg"
 },
 {
   "_id": {
@@ -207,7 +207,7 @@
   "rating": 3.8,
   "reviews": 45,
   "featured": "New Listing",
-  "image_url": "http://localhost:5000/uploads/pexels-fauxels-3184416.jpg"
+  "image_url": "https://realestate-3rel.onrender.com/uploads/pexels-fauxels-3184416.jpg"
 },
 {
   "_id": {
@@ -223,7 +223,7 @@
   "rating": 4.3,
   "reviews": 110,
   "featured": "Featured",
-  "image_url": "http://localhost:5000/uploads/pexels-fauxels-3184416.jpg"
+  "image_url": "https://realestate-3rel.onrender.com/uploads/pexels-fauxels-3184416.jpg"
 },
 {
   "_id": {
@@ -239,7 +239,7 @@
   "rating": 4.5,
   "reviews": 130,
   "featured": "New Listing",
-  "image_url": "http://localhost:5000/uploads/pexels-fauxels-3184416.jpg"
+  "image_url": "https://realestate-3rel.onrender.com/uploads/pexels-fauxels-3184416.jpg"
 },
 {
   "_id": {
@@ -255,7 +255,7 @@
   "rating": 4,
   "reviews": 90,
   "featured": "Featured",
-  "image_url": "http://localhost:5000/uploads/pexels-fauxels-3184416.jpg"
+  "image_url": "https://realestate-3rel.onrender.com/uploads/pexels-fauxels-3184416.jpg"
 },
 {
   "_id": {
@@ -271,7 +271,7 @@
   "rating": 5,
   "reviews": 300,
   "featured": "New Listing",
-  "image_url": "http://localhost:5000/uploads/pexels-fauxels-3184416.jpg"
+  "image_url": "https://realestate-3rel.onrender.com/uploads/pexels-fauxels-3184416.jpg"
 },
 {
   "_id": {
@@ -287,7 +287,7 @@
   "rating": 3.7,
   "reviews": 55,
   "featured": "Featured",
-  "image_url": "http://localhost:5000/uploads/pexels-fauxels-3184416.jpg"
+  "image_url": "https://realestate-3rel.onrender.com/uploads/pexels-fauxels-3184416.jpg"
 },
 {
   "_id": {
@@ -303,7 +303,7 @@
   "rating": 4.2,
   "reviews": 95,
   "featured": "New Listing",
-  "image_url": "http://localhost:5000/uploads/pexels-fauxels-3184416.jpg"
+  "image_url": "https://realestate-3rel.onrender.com/uploads/pexels-fauxels-3184416.jpg"
 },
 {
   "_id": {
@@ -319,7 +319,7 @@
   "rating": 4.1,
   "reviews": 70,
   "featured": "Featured",
-  "image_url": "http://localhost:5000/uploads/pexels-fauxels-3184416.jpg"
+  "image_url": "https://realestate-3rel.onrender.com/uploads/pexels-fauxels-3184416.jpg"
 },
 {
   "_id": {
@@ -335,5 +335,5 @@
   "rating": 4.3,
   "reviews": 85,
   "featured": "New Listing",
-  "image_url": "http://localhost:5000/uploads/pexels-fauxels-3184416.jpg"
+  "image_url": "https://realestate-3rel.onrender.com/uploads/pexels-fauxels-3184416.jpg"
 }]
