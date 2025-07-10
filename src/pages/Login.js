@@ -160,7 +160,7 @@ const Login = () => {
   };
 
   return (
-    <GoogleOAuthProvider clientId="858488242523-sioe4fi0sjh6dop0n2v1vcl7hdv56d3o.apps.googleusercontent.com">
+    
       <div className="min-h-screen w-full bg-gradient-to-br from-gray-900 via-gray-800 to-gray-700 flex items-center justify-center p-4">
         {/* Main Container */}
         <div className="flex flex-col lg:flex-row w-full max-w-5xl h-[800px] bg-white rounded-2xl shadow-2xl overflow-hidden">
@@ -248,7 +248,7 @@ const Login = () => {
                 </div>
 
                 {/* Google Login */}
-                <GoogleLogin
+                
                   onSuccess={responseGoogle}
                   onError={() => setMessage({ text: "Google login failed.", type: "error" })}
                   render={(renderProps) => (
@@ -265,7 +265,7 @@ const Login = () => {
                       Login with Google
                     </button>
                   )}
-                />
+                /
 
                 <p className="text-center text-sm text-gray-600">
                   New to our estate?{" "}
@@ -423,7 +423,7 @@ const Login = () => {
           </div>
         </div>
       </div>
-    </GoogleOAuthProvider>
+    
   );
 };
 

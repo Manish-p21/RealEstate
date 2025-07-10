@@ -272,24 +272,7 @@ export default function Signup() {
           </div>
 
           <div className="w-full flex justify-center">
-            <GoogleLogin
-              onSuccess={handleGoogleSuccess}
-              onError={handleGoogleError}
-              render={(renderProps) => (
-                <button
-                  onClick={renderProps.onClick}
-                  disabled={renderProps.disabled}
-                  className="w-full flex items-center justify-center bg-white border border-gray-300 rounded-lg py-3 text-gray-700 font-medium hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-amber-500 transition"
-                >
-                  <img
-                    src="https://www.svgrepo.com/show/355037/google.svg"
-                    alt="Google"
-                    className="w-6 h-6 mr-3"
-                  />
-                  Sign up with Google
-                </button>
-              )}
-            />
+            
           </div>
 
           <p className="text-center text-sm text-gray-600 mt-4">
@@ -331,9 +314,5 @@ export default function Signup() {
     </div>
   );
 
-  return (
-    <GoogleOAuthProvider clientId="858488242523-sioe4fi0sjh6dop0n2v1vcl7hdv56d3o.apps.googleusercontent.com">
-      {signupContent}
-    </GoogleOAuthProvider>
-  );
+  
 }
