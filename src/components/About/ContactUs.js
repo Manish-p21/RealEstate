@@ -201,6 +201,186 @@ const ContactUs = () => {
       object-fit: cover;
       border-radius: 8px;
     }
+    @media (max-width: 640px) {
+      .contact-container {
+        padding: 0.5rem;
+      }
+      .px-80 {
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+      .mt-20 {
+        margin-top: 4rem;
+      }
+      .pb-20 {
+        padding-bottom: 4rem;
+      }
+      .text-4xl {
+        font-size: 1.875rem;
+        line-height: 2.25rem;
+      }
+      .text-3xl {
+        font-size: 1.5rem;
+        line-height: 2rem;
+      }
+      .text-2xl {
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+      }
+      .grid-cols-3, .grid-cols-2 {
+        grid-template-columns: 1fr;
+      }
+      .gap-6 {
+        gap: 1rem;
+      }
+      .gap-12 {
+        gap: 2rem;
+      }
+      .max-w-2xl {
+        max-width: 100%;
+      }
+      .max-w-md {
+        max-width: 100%;
+      }
+      .p-8 {
+        padding: 1.5rem;
+      }
+      .p-6 {
+        padding: 1rem;
+      }
+      .py-12 {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+      }
+      .mb-12 {
+        margin-bottom: 2rem;
+      }
+      .mb-8 {
+        margin-bottom: 1.5rem;
+      }
+      .mb-6 {
+        margin-bottom: 1rem;
+      }
+      .map-container {
+        height: 250px;
+      }
+      .service-img {
+        height: 120px;
+      }
+      .blog-img {
+        height: 100px;
+      }
+      .team-img {
+        width: 60px;
+        height: 60px;
+      }
+      .btn-primary {
+        padding: 0.5rem 1rem;
+      }
+      .input-field {
+        padding: 0.5rem;
+      }
+      .swiper-slide {
+        width: 100% !important;
+      }
+      .flex.gap-488 {
+        flex-direction: column;
+        gap: 1rem;
+      }
+      .btn-primary.w-full {
+        width: 100%;
+      }
+    }
+    @media (min-width: 641px) and (max-width: 1024px) {
+      .contact-container {
+        padding: 1rem;
+      }
+      .px-80 {
+        padding-left: 2rem;
+        padding-right: 2rem;
+      }
+      .mt-20 {
+        margin-top: 5rem;
+      }
+      .pb-20 {
+        padding-bottom: 5rem;
+      }
+      .text-4xl {
+        font-size: 2.25rem;
+        line-height: 2.5rem;
+      }
+      .text-3xl {
+        font-size: 1.875rem;
+        line-height: 2.25rem;
+      }
+      .text-2xl {
+        font-size: 1.5rem;
+        line-height: 2rem;
+      }
+      .grid-cols-3 {
+        grid-template-columns: 1fr 1fr;
+      }
+      .grid-cols-2 {
+        grid-template-columns: 1fr;
+      }
+      .gap-6 {
+        gap: 1.5rem;
+      }
+      .gap-12 {
+        gap: 2.5rem;
+      }
+      .max-w-2xl {
+        max-width: 90%;
+      }
+      .max-w-md {
+        max-width: 80%;
+      }
+      .p-8 {
+        padding: 2rem;
+      }
+      .p-6 {
+        padding: 1.5rem;
+      }
+      .py-12 {
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+      }
+      .mb-12 {
+        margin-bottom: 2.5rem;
+      }
+      .mb-8 {
+        margin-bottom: 2rem;
+      }
+      .mb-6 {
+        margin-bottom: 1.5rem;
+      }
+      .map-container {
+        height: 350px;
+      }
+      .service-img {
+        height: 150px;
+      }
+      .blog-img {
+        height: 120px;
+      }
+      .team-img {
+        width: 80px;
+        height: 80px;
+      }
+      .btn-primary {
+        padding: 0.6rem 1.2rem;
+      }
+      .input-field {
+        padding: 0.6rem;
+      }
+      .swiper-slide {
+        width: 50% !important;
+      }
+      .flex.gap-4 {
+        flex-direction: row;
+        gap: 1.5rem;
+      }
+    }
   `;
 
   // FAQ data
@@ -214,7 +394,7 @@ const ContactUs = () => {
   // Testimonial data with verified Unsplash images
   const testimonials = [
     { name: "Anita Sharma", location: "Mumbai", text: "The team was incredibly responsive and helped us with all our queries!", img: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&auto=format&fit=crop&w=40&h=40&q=80" },
-    { name: "Vikram Patel", location: "Delhi", text: "Excellent customer service. They made the process seamless.", img: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=40&h=40&q=80" },
+    { name: "Vikram Patel", location: "Delhi", text: "Excellent customer service. They made the process seamless.", img: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=TABLET-4.0.3&auto=format&fit=crop&w=40&h=40&q=80" },
     { name: "Priya Nair", location: "Bangalore", text: "Highly professional and quick to respond. Highly recommend!", img: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&auto=format&fit=crop&w=40&h=40&q=80" },
   ];
 
@@ -248,12 +428,12 @@ const ContactUs = () => {
   ];
 
   return (
-    <div className="bg-white mt-20 pb-20 px-80 w-full">
+    <div className="bg-white mt-20 pb-20 px-80 w-full ">
       {/* Embedded Styles */}
       <style>{styles}</style>
 
       {/* Hero Section */}
-      <div className="text-center mb-12 mt-16 ">
+      <div className="text-center mb-12 mt-16">
         <h1 className="text-4xl font-bold text-gray-900">Contact Us</h1>
         <p className="text-gray-600 mt-4 max-w-2xl mx-auto">
           We're here to help you with any questions or concerns. Reach out to us via the form below, call us, or visit our office.
