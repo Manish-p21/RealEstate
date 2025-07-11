@@ -337,7 +337,7 @@ const PropertyList = () => {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="content-wrapper space-y-2">
+              <div className="content-wrapper space-y-2 p-5 ">
                 <h3 className="text-base sm:text-sm md:text-sm lg:text-base font-medium text-gray-900">{property.title}</h3>
                 <p className="text-sm sm:text-xs md:text-xs lg:text-sm text-gray-600">{property.location}</p>
                 <p className="text-base sm:text-sm md:text-sm lg:text-base font-semibold text-gray-900">₹{property.price}</p>
