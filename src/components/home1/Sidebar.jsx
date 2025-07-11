@@ -7,7 +7,7 @@ const Sidebar = () => {
       <div
         className="relative h-[400px] rounded-2xl shadow-xl overflow-hidden text-white flex flex-col justify-end p-8"
         style={{
-          backgroundImage: `url('/Images/4.jpg')`,
+          backgroundImage: `url('https://realestate-3rel.onrender.com/uploads/4.jpg')`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
@@ -30,7 +30,7 @@ const Sidebar = () => {
           <span className="w-1.5 h-6 bg-black mr-3 rounded-full"></span> Featured Property
         </h3>
         <img
-          src="/Images/3.jpg"
+          src="https://realestate-3rel.onrender.com/uploads/3.jpg"
           alt="Featured Property"
           className="w-full h-72 object-cover mt-4 rounded-lg hover:scale-[1.03] transition-transform"
         />
@@ -72,7 +72,7 @@ const Sidebar = () => {
       <div
         className="h-64 rounded-2xl shadow-md p-6 text-white relative"
         style={{
-          backgroundImage: `url('/Images/2.jpg')`,
+          backgroundImage: `url('https://realestate-3rel.onrender.com/uploads/2.jpg')`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
@@ -112,7 +112,7 @@ const Sidebar = () => {
         <div className="mt-4 space-y-4">
           <div className="flex items-center">
             <img
-              src="/Images/map.png"
+              src="https://realestate-3rel.onrender.com/uploads/map.png"
               alt="Open House 1"
               className="w-20 h-20 object-cover rounded-lg mr-4"
             />
@@ -157,7 +157,7 @@ const Sidebar = () => {
       <div
         className="h-72 rounded-2xl shadow-md p-6 text-white relative"
         style={{
-          backgroundImage: `url('/Images/2.jpg')`,
+          backgroundImage: `url('https://realestate-3rel.onrender.com/uploads/2.jpg')`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
