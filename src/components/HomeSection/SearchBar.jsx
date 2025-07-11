@@ -13,13 +13,14 @@ const SearchBar = () => {
   const searchBarRef = useRef(null);
   const [searchBarHeight, setSearchBarHeight] = useState(0);
 
-  // Sticky behavior based on 1000px scroll threshold
+  // Sticky behavior based on 1000px scroll threshold, disabled on mobile (sm)
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
-      const STICKY_THRESHOLD = 940; // Stick after 1000px from top
+      const STICKY_THRESHOLD = 940; // Stick after 940px from top
+      const isMobile = window.innerWidth < 640; // Tailwind's sm breakpoint
 
-      if (scrollY > STICKY_THRESHOLD) {
+      if (!isMobile && scrollY > STICKY_THRESHOLD) {
         setSticky(true);
       } else {
         setSticky(false);
@@ -74,23 +75,21 @@ const SearchBar = () => {
       </style>
 
       {/* Placeholder for sticky */}
-      {sticky && <div style={{ height: searchBarHeight }}></div>}
+      {sticky && <div className="hidden sm:block" style={{ height: searchBarHeight }}></div>}
 
       {/* SearchBar */}
       <div
         ref={searchBarRef}
         className={`w-full flex justify-center transition-all duration-300 ease-in-out ${
-          sticky
-            ? "fixed top-[72px] left-0 right-0 z-40 bg-transparent"
-            : "relative bg-transparent"
+          sticky ? "sm:fixed sm:top-[72px] sm:left-0 sm:right-0 sm:z-40 sm:bg-transparent" : "relative bg-transparent"
         }`}
       >
-        <div className="flex items-center max-w-4xl w-full mx-6 bg-white/15 backdrop-blur-xl rounded-2xl p-4 shadow-xl animate-slideUp">
+        <div className="flex flex-col sm:flex-row items-center max-w-4xl w-full mx-5 sm:mx-6 bg-white/15 backdrop-blur-xl rounded-2xl p-4 sm:p-4 shadow-xl animate-slideUp space-y-3 sm:space-y-0">
           {/* Location Dropdown */}
-          <div className="relative flex-1">
+          <div className="relative w-full sm:flex-1">
             <button
               onClick={() => toggleDropdown("location")}
-              className="w-full px-4 py-3 text-gray-900 font-medium text-left border-r border-gray-300 flex justify-between items-center"
+              className="w-full px-3 sm:px-4 py-2 sm:py-3 text-gray-900 font-medium text-left border-b sm:border-b-0 sm:border-r border-gray-300 flex justify-between items-center text-sm sm:text-base"
             >
               {filters.location}
               <span className="ml-2 text-gray-600">↓</span>
@@ -101,7 +100,7 @@ const SearchBar = () => {
                   <li
                     key={item}
                     onClick={() => handleSelect("location", item)}
-                    className="px-4 py-2 text-gray-900 hover:bg-gray-100 cursor-pointer transition-colors duration-200"
+                    className="px-3 sm:px-4 py-2 text-gray-900 hover:bg-gray-100 cursor-pointer transition-colors duration-200 text-sm sm:text-base"
                   >
                     {item}
                   </li>
@@ -111,10 +110,10 @@ const SearchBar = () => {
           </div>
 
           {/* Property Type Dropdown */}
-          <div className="relative flex-1">
+          <div className="relative w-full sm:flex-1">
             <button
               onClick={() => toggleDropdown("property")}
-              className="w-full px-4 py-3 text-gray-900 font-medium text-left border-r border-gray-300 flex justify-between items-center"
+              className="w-full px-3 sm:px-4 py-2 sm:py-3 text-gray-900 font-medium text-left border-b sm:border-b-0 sm:border-r border-gray-300 flex justify-between items-center text-sm sm:text-base"
             >
               {filters.property}
               <span className="ml-2 text-gray-600">↓</span>
@@ -125,7 +124,7 @@ const SearchBar = () => {
                   <li
                     key={item}
                     onClick={() => handleSelect("property", item)}
-                    className="px-4 py-2 text-gray-900 hover:bg-gray-100 cursor-pointer transition-colors duration-200"
+                    className="px-3 sm:px-4 py-2 text-gray-900 hover:bg-gray-100 cursor-pointer transition-colors duration-200 text-sm sm:text-base"
                   >
                     {item}
                   </li>
@@ -135,10 +134,10 @@ const SearchBar = () => {
           </div>
 
           {/* Price Range Dropdown */}
-          <div className="relative flex-1">
+          <div className="relative w-full sm:flex-1">
             <button
               onClick={() => toggleDropdown("price")}
-              className="w-full px-4 py-3 text-gray-900 font-medium text-left border-r border-gray-300 flex justify-between items-center"
+              className="w-full px-3 sm:px-4 py-2 sm:py-3 text-gray-900 font-medium text-left border-b sm:border-b-0 sm:border-r border-gray-300 flex justify-between items-center text-sm sm:text-base"
             >
               {filters.price}
               <span className="ml-2 text-gray-600">↓</span>
@@ -149,7 +148,7 @@ const SearchBar = () => {
                   <li
                     key={item}
                     onClick={() => handleSelect("price", item)}
-                    className="px-4 py-2 text-gray-900 hover:bg-gray-100 cursor-pointer transition-colors duration-200"
+                    className="px-3 sm:px-4 py-2 text-gray-900 hover:bg-gray-100 cursor-pointer transition-colors duration-200 text-sm sm:text-base"
                   >
                     {item}
                   </li>
@@ -159,10 +158,10 @@ const SearchBar = () => {
           </div>
 
           {/* Rooms Dropdown */}
-          <div className="relative flex-1">
+          <div className="relative w-full sm:flex-1">
             <button
               onClick={() => toggleDropdown("rooms")}
-              className="w-full px-4 py-3 text-gray-900 font-medium text-left border-r border-gray-300 flex justify-between items-center"
+              className="w-full px-3 sm:px-4 py-2 sm:py-3 text-gray-900 font-medium text-left border-b sm:border-b-0 sm:border-r border-gray-300 flex justify-between items-center text-sm sm:text-base"
             >
               {filters.rooms}
               <span className="ml-2 text-gray-600">↓</span>
@@ -173,7 +172,7 @@ const SearchBar = () => {
                   <li
                     key={item}
                     onClick={() => handleSelect("rooms", item)}
-                    className="px-4 py-2 text-gray-900 hover:bg-gray-100 cursor-pointer transition-colors duration-200"
+                    className="px-3 sm:px-4 py-2 text-gray-900 hover:bg-gray-100 cursor-pointer transition-colors duration-200 text-sm sm:text-base"
                   >
                     {item}
                   </li>
@@ -183,7 +182,7 @@ const SearchBar = () => {
           </div>
 
           {/* Search Button */}
-          <button className="px-6 py-3 ml-4 bg-white text-gray-900 rounded-full font-semibold hover:bg-gray-200 transition-all duration-300 shadow-lg hover:shadow-xl animate-pulse">
+          <button className="w-full sm:w-auto px-6 py-2 sm:py-3 sm:ml-4 bg-white text-gray-900 rounded-full font-semibold hover:bg-gray-200 transition-all duration-300 shadow-lg hover:shadow-xl animate-pulse text-sm sm:text-base">
             Search
           </button>
         </div>
