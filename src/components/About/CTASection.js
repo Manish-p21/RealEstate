@@ -21,7 +21,7 @@ const CTASection = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
         >
-          Start your journey with MyBrand today and explore our curated listings.
+          Start your journey with Realvia today and explore our curated listings.
         </motion.p>
 
         <Link to="/properties">

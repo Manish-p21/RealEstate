@@ -8,10 +8,10 @@ const teamData = [
     role: "Founder & CEO",
     image:
       "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=2070&auto=format&fit=crop",
-    alt: "Jane Doe, Founder & CEO of MyBrand",
-    bio: "Jane leads MyBrand with a vision to revolutionize real estate.",
+    alt: "Jane Doe, Founder & CEO of Realvia",
+    bio: "Jane leads Realvia with a vision to revolutionize real estate.",
     details:
-      "With over 15 years in real estate, Jane founded MyBrand to make home-buying transparent and accessible. Her leadership drives our mission to empower clients.",
+      "With over 15 years in real estate, Jane founded Realvia to make home-buying transparent and accessible. Her leadership drives our mission to empower clients.",
     social: {
       linkedin: "https://linkedin.com/in/janedoe",
       twitter: "https://twitter.com/janedoe",
@@ -22,10 +22,10 @@ const teamData = [
     role: "Chief Technology Officer",
     image:
       "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=2070&auto=format&fit=crop",
-    alt: "John Smith, CTO of MyBrand",
-    bio: "John oversees technology innovation at MyBrand.",
+    alt: "John Smith, CTO of Realvia",
+    bio: "John oversees technology innovation at Realvia.",
     details:
-      "John brings 10 years of tech expertise to MyBrand, developing cutting-edge tools to simplify the home-buying process. He's passionate about user-centric design.",
+      "John brings 10 years of tech expertise to Realvia, developing cutting-edge tools to simplify the home-buying process. He's passionate about user-centric design.",
     social: {
       linkedin: "https://linkedin.com/in/johnsmith",
       twitter: "https://twitter.com/johnsmith",
@@ -36,10 +36,10 @@ const teamData = [
     role: "Head of Operations",
     image:
       "https://images.unsplash.com/photo-1573496359142-b8d877c828f7?q=80&w=2070&auto=format&fit=crop",
-    alt: "Emily Chen, Head of Operations at MyBrand",
+    alt: "Emily Chen, Head of Operations at Realvia",
     bio: "Emily ensures seamless operations across all platforms.",
     details:
-      "Emily manages MyBrand's operations with precision, ensuring every client interaction is smooth and efficient. Her focus is on operational excellence.",
+      "Emily manages Realvia's operations with precision, ensuring every client interaction is smooth and efficient. Her focus is on operational excellence.",
     social: {
       linkedin: "https://linkedin.com/in/emilychen",
       twitter: "https://twitter.com/emilychen",
@@ -127,7 +127,7 @@ const OurTeam = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
         >
-          Meet the dedicated professionals driving MyBrand’s mission to transform real estate.
+          Meet the dedicated professionals driving Realvia’s mission to transform real estate.
         </motion.p>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {teamData.map((member, index) => (

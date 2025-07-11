@@ -19,7 +19,7 @@ const OurStory = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
         >
-          Founded in 2015, MyBrand set out to simplify the home-buying process with transparency and trust.
+          Founded in 2015, Realvia set out to simplify the home-buying process with transparency and trust.
         </motion.p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           <motion.div
@@ -31,7 +31,7 @@ const OurStory = () => {
             <div className="relative h-64">
               <img
                 src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop"
-                alt="MyBrand office"
+                alt="Realvia office"
                 className="w-full h-full object-cover rounded-t-3xl"
               />
             </div>

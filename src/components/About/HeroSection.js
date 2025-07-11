@@ -26,7 +26,7 @@ const HeroSection = () => {
             transition={{ duration: 0.7, ease: "easeInOut" }}
           >
             <h1 className="text-3xl sm:text-5xl font-extrabold text-white tracking-tight text-shadow">
-              Welcome to MyBrand
+              Welcome to Realvia
             </h1>
             <div className="absolute top-0 right-[510px] h-full w-2 bg-white"></div>
           </motion.div>

@@ -23,7 +23,7 @@ const Navbar = () => {
     {
       id: 2,
       type: "new_user",
-      message: "Welcome to MyBrand! Complete your profile to get started.",
+      message: "Welcome to Realvia! Complete your profile to get started.",
       isRead: true,
       timestamp: "1 day ago",
       link: "/profile",
@@ -147,7 +147,7 @@ const Navbar = () => {
           className="text-lg md:text-xl font-bold text-gray-800 cursor-pointer"
           onClick={() => navigate("/")}
         >
-          MyBrand
+          Realvia
         </div>
 
         {/* Hamburger Icon for Mobile */}

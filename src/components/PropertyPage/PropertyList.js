@@ -297,7 +297,7 @@ const PropertyList = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
         >
-          Why Choose MyBrand?
+          Why Choose Realvia?
         </motion.h2>
         <motion.p
           className="text-lg text-gray-600 text-center max-w-2xl mx-auto mb-12 animate-slideUp"
@@ -412,7 +412,7 @@ const PropertyList = () => {
           >
             {[
               {
-                quote: "MyBrand made our home search effortless and enjoyable!",
+                quote: "Realvia made our home search effortless and enjoyable!",
                 author: "Priya Sharma, Mumbai",
                 rating: 5,
               },
