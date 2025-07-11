@@ -30,7 +30,7 @@ const PropertyList = () => {
   };
 
   return (
-    <div className="w-full px-6 py-12 ">
+    <div className="w-full px-4 sm:px-0 py-12">
       {/* Embedded CSS */}
       <style>
         {`
@@ -114,20 +114,13 @@ const PropertyList = () => {
       </style>
 
       {/* Title Section */}
-      <div style={{ borderLeft: "6px solid black", paddingLeft: "1rem", marginBottom: "2rem" }}>
-        <h2 style={{ fontSize: "1.875rem", fontWeight: "bold" }}>Best Homes in Your Area</h2>
+      <div className="border-l-4 border-black pl-4 mb-8">
+        <h2 className="text-3xl font-bold">Best Homes in Your Area</h2>
         <button
           onClick={() => setIsModalOpen(true)}
-          style={{
-            color: "#6b7280",
-            fontSize: "0.875rem",
-            marginTop: "0.25rem",
-            transition: "color 0.3s",
-          }}
-          onMouseOver={(e) => (e.target.style.color = "#2563eb")}
-          onMouseOut={(e) => (e.target.style.color = "#6b7280")}
+          className="text-gray-500 text-sm mt-1 hover:text-blue-600 transition-colors duration-300"
         >
-          Change your set location {selectedLocation && <span style={{ fontWeight: "bold" }}>. {selectedLocation.toUpperCase()}</span>}
+          Change your set location {selectedLocation && <span className="font-bold">. {selectedLocation.toUpperCase()}</span>}
         </button>
       </div>
 
@@ -159,7 +152,7 @@ const PropertyList = () => {
       </Swiper>
 
       {/* Property Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mb-12">
+      <div className="grid grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
         {properties.map((property, index) => (
           <div
             key={index}
@@ -219,12 +212,12 @@ const PropertyList = () => {
                   <FaStar className="text-yellow-400 mr-1" />
                   <span className="text-sm font-medium text-gray-900">{property.rating}</span>
                   <span className="text-xs text-gray-500 ml-1">({property.reviews})</span>
-                </div>                
+                </div>
               </div>
 
               {/* Actions */}
               <div className="space-y-2">
-                <button 
+                <button
                   className="btn-secondary flex items-center justify-center gap-2"
                   aria-label="Bookmark property"
                   title="Save to favorites"
@@ -233,7 +226,7 @@ const PropertyList = () => {
                   <span>Bookmark</span>
                 </button>
                 <Link to="/home1" className="block">
-                  <button 
+                  <button
                     className="btn-primary"
                     aria-label="View property details"
                   >
@@ -247,7 +240,7 @@ const PropertyList = () => {
       </div>
 
       {/* Why Choose Us Section */}
-      <div className="bg-gray-100 py-12 px-6 rounded-lg mb-12">
+      <div className="bg-gray-100 py-12 px-4 sm:px-6 rounded-lg mb-12">
         <h2 className="text-3xl font-semibold text-gray-900 text-center mb-8 animate-slideUp">
           Why Choose Us?
         </h2>
@@ -272,7 +265,7 @@ const PropertyList = () => {
       </div>
 
       {/* Testimonials Section */}
-      <div className="py-12 px-6">
+      <div className="py-12 px-4 sm:px-6">
         <h2 className="text-3xl font-semibold text-gray-900 text-center mb-8 animate-slideUp">
           Customer Testimonials
         </h2>
@@ -312,7 +305,7 @@ const PropertyList = () => {
       </div>
 
       {/* CTA Banner */}
-      <div className="bg-gradient-to-r from-gray-900 to-black py-12 px-6 rounded-lg text-center mb-12 animate-slideUp">
+      <div className="bg-gradient-to-r from-gray-900 to-black py-12 px-4 sm:px-6 rounded-lg text-center mb-12 animate-slideUp">
         <h2 className="text-3xl font-semibold text-white mb-4">Ready to Find Your Perfect Home?</h2>
         <p className="text-gray-300 max-w-lg mx-auto mb-6 text-sm">
           Discover thousands of verified properties and start your journey today.
@@ -321,11 +314,11 @@ const PropertyList = () => {
       </div>
 
       {/* Recently Viewed Section */}
-      <div className="py-12 px-6">
+      <div className="py-12 px-4 sm:px-6">
         <h2 className="text-3xl font-semibold text-gray-900 mb-8 animate-slideUp">
           Recently Viewed Properties
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
           {properties.slice(0, 4).map((property, index) => (
             <div
               key={index}
