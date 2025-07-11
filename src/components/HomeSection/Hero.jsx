@@ -77,7 +77,7 @@ const Hero = () => {
         ref={heroRef}
         className="absolute inset-0 w-full h-full bg-cover bg-center animate-subtleZoom transition-transform duration-100"
         style={{
-          backgroundImage: "url('/Images/4.jpg')",
+          backgroundImage: "url('https://realestate-3rel.onrender.com/uploads/4.jpg')",
           backgroundBlendMode: "overlay",
           backgroundColor: "rgba(0,0,0,0.4)",
         }}
