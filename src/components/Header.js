@@ -144,11 +144,13 @@ const Navbar = () => {
       <div className="flex justify-between items-center px-4 py-2 max-w-7xl mx-auto h-full">
         {/* Left Side: Logo */}
         <div
-          className="text-lg md:text-xl font-bold text-gray-800 cursor-pointer"
+          className="flex items-center gap-2 text-lg md:text-xl font-bold text-gray-800 cursor-pointer"
           onClick={() => navigate("/")}
         >
+          <img src="https://realestate-3rel.onrender.com/uploads/12121.png" alt="Realvia Logo" className="w-10 h-10" />
           Realvia
         </div>
+
 
         {/* Hamburger Icon for Mobile */}
         <div className="md:hidden">
